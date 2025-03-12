@@ -51,7 +51,7 @@ export default function Sidebar({
       {/* Sidebar toggle button */}
       <button
         onClick={toggleSidebar}
-        className="fixed top-4 left-4 z-50 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 shadow-md"
+        className="fixed top-4 left-4 z-50 bg-gray-800 text-white p-2 rounded-full hover:cursor-pointer hover:bg-gray-700 shadow-md"
         aria-label="Toggle sidebar"
       >
         <svg
@@ -87,7 +87,7 @@ export default function Sidebar({
               <div
                 key={chat.id}
                 className={`flex items-center justify-between p-2 mb-2 rounded ${
-                  currentChatId === chat.id ? "bg-blue-100" : "hover:bg-gray-100"
+                  currentChatId === chat.id ? "bg-blue-400 text-black" : "hover:bg-gray-100 text-black"
                 } transition-colors duration-200`}
               >
                 <span
